@@ -1,0 +1,23 @@
+{
+  "name": "21-get-payments-booking",
+  "endpoint": "/payments/booking/95491d5c-3879-456b-8192-1309a862a7aa",
+  "method": "GET",
+  "status": 200,
+  "body": {
+    "success": true,
+    "message": "Success",
+    "data": [
+      {
+        "id": "a1229d8e-fbfa-4307-95ac-9ce06a002d13",
+        "bookingId": "95491d5c-3879-456b-8192-1309a862a7aa",
+        "amount": 1400,
+        "platformFee": 140,
+        "method": "CARD",
+        "status": "PAID",
+        "paidAt": "2026-11-08T14:33:27",
+        "netWorkerAmount": 1260
+      }
+    ],
+    "timestamp": "2026-11-08T09:03:27.346994700Z"
+  }
+}

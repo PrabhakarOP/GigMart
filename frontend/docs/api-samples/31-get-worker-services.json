@@ -1,0 +1,21 @@
+{
+  "name": "31-get-worker-services",
+  "endpoint": "/workers/e783796d-c4d5-438e-97bf-009eed2e7003/services",
+  "method": "GET",
+  "status": 200,
+  "body": {
+    "success": true,
+    "message": "Success",
+    "data": [
+      {
+        "id": "4ecc21b9-5fa9-4292-8b05-c10a1515660a",
+        "workerProfileId": "e783796d-c4d5-438e-97bf-009eed2e7003",
+        "categoryId": "062da945-ec2c-4a06-adcd-3faf9c2859e9",
+        "categoryName": "AC Technician",
+        "baseRate": 450,
+        "rateType": "HOURLY"
+      }
+    ],
+    "timestamp": "2026-11-08T09:03:27.672723500Z"
+  }
+}

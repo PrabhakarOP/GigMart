@@ -1,0 +1,26 @@
+{
+  "name": "11-get-gig",
+  "endpoint": "/gigs/bcb34b4e-ec8f-4fa6-9a08-070b1fcf9465",
+  "method": "GET",
+  "status": 200,
+  "body": {
+    "success": true,
+    "message": "Success",
+    "data": {
+      "id": "bcb34b4e-ec8f-4fa6-9a08-070b1fcf9465",
+      "providerProfileId": "1e9ae65c-14a2-49f2-a121-1da7be2ecb3f",
+      "providerName": "Probe Provider",
+      "categoryId": "062da945-ec2c-4a06-adcd-3faf9c2859e9",
+      "categoryName": "AC Technician",
+      "addressId": "6932207c-0a80-4545-8d0b-e2db37899b9c",
+      "addressSummary": "123 Test Street, Suite 4, Bengaluru - 560001",
+      "title": "AC Deep Cleaning and Gas Refill",
+      "description": "Looking for a certified technician to clean and service two split AC units.",
+      "budget": 1500,
+      "scheduledAt": "2026-11-11T09:03:26",
+      "status": "OPEN",
+      "applicationCount": 0
+    },
+    "timestamp": "2026-11-08T09:03:27.035511100Z"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "26b-send-message-content-only",
+  "endpoint": "/messages",
+  "method": "POST",
+  "status": 400,
+  "body": {
+    "success": false,
+    "message": "Validation failed",
+    "data": {
+      "body": "Message body cannot be empty"
+    },
+    "timestamp": "2026-11-08T09:03:27.541135200Z"
+  }
+}

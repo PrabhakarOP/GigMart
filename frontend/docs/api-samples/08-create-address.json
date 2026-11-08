@@ -1,0 +1,20 @@
+{
+  "name": "08-create-address",
+  "endpoint": "/addresses",
+  "method": "POST",
+  "status": 201,
+  "body": {
+    "success": true,
+    "message": "Address added successfully",
+    "data": {
+      "id": "6932207c-0a80-4545-8d0b-e2db37899b9c",
+      "userId": "a72d9a3f-5a6c-44f7-ad4b-c2cb3980db3b",
+      "line1": "123 Test Street, Suite 4",
+      "city": "Bengaluru",
+      "pincode": "560001",
+      "latitude": 12.9716,
+      "longitude": 77.5946
+    },
+    "timestamp": "2026-11-08T09:03:26.935358500Z"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "34-add-document",
+  "endpoint": "/workers/documents",
+  "method": "POST",
+  "status": 201,
+  "body": {
+    "success": true,
+    "message": "Document uploaded",
+    "data": {
+      "id": "4e18cf6b-dd31-44ae-a2fc-66d64f452f9e",
+      "workerProfileId": "e783796d-c4d5-438e-97bf-009eed2e7003",
+      "docType": "CERTIFICATION",
+      "fileUrl": "https://storage.gigmart.test/cert-123.pdf",
+      "status": "PENDING"
+    },
+    "timestamp": "2026-11-08T09:03:27.730135500Z"
+  }
+}

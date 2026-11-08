@@ -1,0 +1,23 @@
+{
+  "name": "28-worker-update",
+  "endpoint": "/workers/e783796d-c4d5-438e-97bf-009eed2e7003",
+  "method": "PUT",
+  "status": 200,
+  "body": {
+    "success": true,
+    "message": "Worker profile updated",
+    "data": {
+      "id": "e783796d-c4d5-438e-97bf-009eed2e7003",
+      "userId": "846a08b4-b4d9-4342-8b4d-12e5ab01ae1f",
+      "userName": "Probe Worker",
+      "userEmail": "probe.worker.1794128606435@gigmart.test",
+      "userPhone": "9928606435",
+      "bio": "Professional HVAC technician with 8 years field experience.",
+      "experienceYears": 8,
+      "verificationStatus": "PENDING",
+      "avgRating": 5,
+      "serviceRadiusKm": 30
+    },
+    "timestamp": "2026-11-08T09:03:27.609376700Z"
+  }
+}

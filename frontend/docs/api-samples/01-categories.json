@@ -1,0 +1,61 @@
+{
+  "name": "01-categories",
+  "endpoint": "/categories?activeOnly=true",
+  "method": "GET",
+  "status": 200,
+  "body": {
+    "success": true,
+    "message": "Success",
+    "data": [
+      {
+        "id": "062da945-ec2c-4a06-adcd-3faf9c2859e9",
+        "name": "AC Technician",
+        "icon": "air-conditioner",
+        "isActive": true
+      },
+      {
+        "id": "0ee89800-0fd5-4ea3-80a1-aff4ed3379ca",
+        "name": "Carpenter",
+        "icon": "hammer",
+        "isActive": true
+      },
+      {
+        "id": "220d9cb6-1a69-4963-b97a-8e85fc701de2",
+        "name": "House Cleaner",
+        "icon": "sparkles",
+        "isActive": true
+      },
+      {
+        "id": "30f79322-60f9-4a97-addf-35a9aa5db027",
+        "name": "Electrician",
+        "icon": "bolt",
+        "isActive": true
+      },
+      {
+        "id": "467f50bb-6964-491b-a71f-93db0725a3e2",
+        "name": "Plumber",
+        "icon": "wrench",
+        "isActive": true
+      },
+      {
+        "id": "a3b87ede-f06c-4a31-8e92-f95b1ca6bbfc",
+        "name": "Gardener",
+        "icon": "flower",
+        "isActive": true
+      },
+      {
+        "id": "a5f60a8b-fd3b-4083-9177-ea7a554c6b2f",
+        "name": "Painter",
+        "icon": "brush",
+        "isActive": true
+      },
+      {
+        "id": "b1fb37f1-9e2d-453f-847b-3717bd90a36c",
+        "name": "Appliance Repair",
+        "icon": "cog",
+        "isActive": true
+      }
+    ],
+    "timestamp": "2026-11-08T09:03:26.537812600Z"
+  }
+}

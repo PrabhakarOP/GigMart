@@ -1,0 +1,23 @@
+{
+  "name": "27-get-messages-gig",
+  "endpoint": "/messages/gig/bcb34b4e-ec8f-4fa6-9a08-070b1fcf9465",
+  "method": "GET",
+  "status": 200,
+  "body": {
+    "success": true,
+    "message": "Success",
+    "data": [
+      {
+        "id": "adde14a6-da67-4230-81cf-ec88e33dc723",
+        "gigId": "bcb34b4e-ec8f-4fa6-9a08-070b1fcf9465",
+        "senderId": "a72d9a3f-5a6c-44f7-ad4b-c2cb3980db3b",
+        "senderName": "Probe Provider",
+        "receiverId": "846a08b4-b4d9-4342-8b4d-12e5ab01ae1f",
+        "receiverName": "Probe Worker",
+        "body": "Hi worker, thanks for the service!",
+        "sentAt": "2026-11-08T14:33:27"
+      }
+    ],
+    "timestamp": "2026-11-08T09:03:27.585306200Z"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "33-get-slots",
+  "endpoint": "/workers/e783796d-c4d5-438e-97bf-009eed2e7003/slots",
+  "method": "GET",
+  "status": 200,
+  "body": {
+    "success": true,
+    "message": "Success",
+    "data": [
+      {
+        "id": "b1975b15-a05b-417f-a1af-a9c89af6ca1f",
+        "workerProfileId": "e783796d-c4d5-438e-97bf-009eed2e7003",
+        "dayOfWeek": 2,
+        "startTime": "09:00",
+        "endTime": "18:00"
+      }
+    ],
+    "timestamp": "2026-11-08T09:03:27.710661100Z"
+  }
+}

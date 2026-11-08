@@ -1,0 +1,20 @@
+{
+  "name": "05-login-worker",
+  "endpoint": "/auth/login",
+  "method": "POST",
+  "status": 200,
+  "body": {
+    "success": true,
+    "message": "Login successful",
+    "data": {
+      "id": "846a08b4-b4d9-4342-8b4d-12e5ab01ae1f",
+      "fullName": "Probe Worker",
+      "email": "probe.worker.1794128606435@gigmart.test",
+      "phone": "9928606435",
+      "role": "WORKER",
+      "createdAt": "2026-11-08T09:03:26Z",
+      "verified": false
+    },
+    "timestamp": "2026-11-08T09:03:26.791739300Z"
+  }
+}

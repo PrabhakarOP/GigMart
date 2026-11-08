@@ -1,0 +1,35 @@
+{
+  "name": "24-get-reviews-booking",
+  "endpoint": "/reviews/booking/95491d5c-3879-456b-8192-1309a862a7aa",
+  "method": "GET",
+  "status": 200,
+  "body": {
+    "success": true,
+    "message": "Success",
+    "data": [
+      {
+        "id": "33e8f638-a562-432a-b967-18922cfb0bbb",
+        "bookingId": "95491d5c-3879-456b-8192-1309a862a7aa",
+        "reviewerId": "846a08b4-b4d9-4342-8b4d-12e5ab01ae1f",
+        "reviewerName": "Probe Worker",
+        "revieweeId": "a72d9a3f-5a6c-44f7-ad4b-c2cb3980db3b",
+        "revieweeName": "Probe Provider",
+        "rating": 5,
+        "comment": "Great host, clear instructions and quick payment.",
+        "createdAt": "2026-11-08T14:33:27"
+      },
+      {
+        "id": "5e4b5f5a-d46c-4b87-982c-f4350ff66070",
+        "bookingId": "95491d5c-3879-456b-8192-1309a862a7aa",
+        "reviewerId": "a72d9a3f-5a6c-44f7-ad4b-c2cb3980db3b",
+        "reviewerName": "Probe Provider",
+        "revieweeId": "846a08b4-b4d9-4342-8b4d-12e5ab01ae1f",
+        "revieweeName": "Probe Worker",
+        "rating": 5,
+        "comment": "Punctual and very thorough service!",
+        "createdAt": "2026-11-08T14:33:27"
+      }
+    ],
+    "timestamp": "2026-11-08T09:03:27.455501100Z"
+  }
+}

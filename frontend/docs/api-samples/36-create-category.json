@@ -1,0 +1,17 @@
+{
+  "name": "36-create-category",
+  "endpoint": "/categories",
+  "method": "POST",
+  "status": 201,
+  "body": {
+    "success": true,
+    "message": "Category created successfully",
+    "data": {
+      "id": "485ff348-6d33-467f-bc16-c5914c540644",
+      "name": "Test Category 1794128606435",
+      "icon": "wrench",
+      "isActive": true
+    },
+    "timestamp": "2026-11-08T09:03:27.763215800Z"
+  }
+}

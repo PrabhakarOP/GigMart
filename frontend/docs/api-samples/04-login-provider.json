@@ -1,0 +1,20 @@
+{
+  "name": "04-login-provider",
+  "endpoint": "/auth/login",
+  "method": "POST",
+  "status": 200,
+  "body": {
+    "success": true,
+    "message": "Login successful",
+    "data": {
+      "id": "a72d9a3f-5a6c-44f7-ad4b-c2cb3980db3b",
+      "fullName": "Probe Provider",
+      "email": "probe.provider.1794128606435@gigmart.test",
+      "phone": "9828606435",
+      "role": "PROVIDER",
+      "createdAt": "2026-11-08T09:03:26Z",
+      "verified": false
+    },
+    "timestamp": "2026-11-08T09:03:26.771946700Z"
+  }
+}

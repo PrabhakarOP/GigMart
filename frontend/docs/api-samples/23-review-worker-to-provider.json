@@ -1,0 +1,22 @@
+{
+  "name": "23-review-worker-to-provider",
+  "endpoint": "/reviews",
+  "method": "POST",
+  "status": 201,
+  "body": {
+    "success": true,
+    "message": "Review submitted successfully",
+    "data": {
+      "id": "33e8f638-a562-432a-b967-18922cfb0bbb",
+      "bookingId": "95491d5c-3879-456b-8192-1309a862a7aa",
+      "reviewerId": "846a08b4-b4d9-4342-8b4d-12e5ab01ae1f",
+      "reviewerName": "Probe Worker",
+      "revieweeId": "a72d9a3f-5a6c-44f7-ad4b-c2cb3980db3b",
+      "revieweeName": "Probe Provider",
+      "rating": 5,
+      "comment": "Great host, clear instructions and quick payment.",
+      "createdAt": "2026-11-08T14:33:27"
+    },
+    "timestamp": "2026-11-08T09:03:27.436125400Z"
+  }
+}

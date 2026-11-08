@@ -1,0 +1,20 @@
+{
+  "name": "35-get-documents",
+  "endpoint": "/workers/e783796d-c4d5-438e-97bf-009eed2e7003/documents",
+  "method": "GET",
+  "status": 200,
+  "body": {
+    "success": true,
+    "message": "Success",
+    "data": [
+      {
+        "id": "4e18cf6b-dd31-44ae-a2fc-66d64f452f9e",
+        "workerProfileId": "e783796d-c4d5-438e-97bf-009eed2e7003",
+        "docType": "CERTIFICATION",
+        "fileUrl": "https://storage.gigmart.test/cert-123.pdf",
+        "status": "PENDING"
+      }
+    ],
+    "timestamp": "2026-11-08T09:03:27.742996Z"
+  }
+}

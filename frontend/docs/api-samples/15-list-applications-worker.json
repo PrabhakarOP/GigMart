@@ -1,0 +1,25 @@
+{
+  "name": "15-list-applications-worker",
+  "endpoint": "/applications/worker/e783796d-c4d5-438e-97bf-009eed2e7003",
+  "method": "GET",
+  "status": 200,
+  "body": {
+    "success": true,
+    "message": "Success",
+    "data": [
+      {
+        "id": "44614dd7-0ad5-42e6-9337-0745ff873688",
+        "gigId": "bcb34b4e-ec8f-4fa6-9a08-070b1fcf9465",
+        "gigTitle": "AC Deep Cleaning and Gas Refill",
+        "workerProfileId": "e783796d-c4d5-438e-97bf-009eed2e7003",
+        "workerName": "Probe Worker",
+        "workerRating": 0,
+        "quotedPrice": 1400,
+        "coverNote": "I have 5 years experience servicing split ACs. Available on time.",
+        "status": "PENDING",
+        "createdAt": "2026-11-08T14:33:27"
+      }
+    ],
+    "timestamp": "2026-11-08T09:03:27.170981500Z"
+  }
+}

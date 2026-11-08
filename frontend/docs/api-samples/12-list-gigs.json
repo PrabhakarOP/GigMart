@@ -1,0 +1,103 @@
+{
+  "name": "12-list-gigs",
+  "endpoint": "/gigs",
+  "method": "GET",
+  "status": 200,
+  "body": {
+    "success": true,
+    "message": "Success",
+    "data": [
+      {
+        "id": "6705da2a-0490-4a9a-8cbc-328d4d433c75",
+        "providerProfileId": "5271ba69-383f-4b36-9c98-08cef6f92d6f",
+        "providerName": "Bob Builder Provider",
+        "categoryId": "062da945-ec2c-4a06-adcd-3faf9c2859e9",
+        "categoryName": "AC Technician",
+        "addressId": "a7409db0-ccb0-4447-9903-a555aed258dd",
+        "addressSummary": "42 Tech Boulevard, Metropolis - 560001",
+        "title": "Urgent AC Servicing Required",
+        "description": "AC is leaking water and not cooling.",
+        "budget": 600,
+        "scheduledAt": "2026-10-12T12:10:30",
+        "status": "COMPLETED",
+        "applicationCount": 1
+      },
+      {
+        "id": "70c15d8d-a7d0-4d7f-a24c-ab60484cd3fc",
+        "providerProfileId": "4ddb60cd-6fb5-4a07-86d4-35b850fe4c1f",
+        "providerName": "Bob Builder Provider",
+        "categoryId": "062da945-ec2c-4a06-adcd-3faf9c2859e9",
+        "categoryName": "AC Technician",
+        "addressId": "188e9151-1ae2-4a95-98e0-76fa209d6755",
+        "addressSummary": "42 Tech Boulevard, Metropolis - 560001",
+        "title": "Urgent AC Servicing Required",
+        "description": "AC is leaking water and not cooling.",
+        "budget": 600,
+        "scheduledAt": "2026-10-14T13:12:49",
+        "status": "COMPLETED",
+        "applicationCount": 1
+      },
+      {
+        "id": "8efb15ee-d9d0-4554-bd84-03f8172ded55",
+        "providerProfileId": "837a879e-0d05-4c08-94c9-2519e438432c",
+        "providerName": "Bob Builder Provider",
+        "categoryId": "062da945-ec2c-4a06-adcd-3faf9c2859e9",
+        "categoryName": "AC Technician",
+        "addressId": "cffbccb4-f58a-434a-a674-fc265cfaa8b8",
+        "addressSummary": "42 Tech Boulevard, Metropolis - 560001",
+        "title": "Urgent AC Servicing Required",
+        "description": "AC is leaking water and not cooling.",
+        "budget": 600,
+        "scheduledAt": "2026-10-12T12:07:43",
+        "status": "COMPLETED",
+        "applicationCount": 1
+      },
+      {
+        "id": "bcb34b4e-ec8f-4fa6-9a08-070b1fcf9465",
+        "providerProfileId": "1e9ae65c-14a2-49f2-a121-1da7be2ecb3f",
+        "providerName": "Probe Provider",
+        "categoryId": "062da945-ec2c-4a06-adcd-3faf9c2859e9",
+        "categoryName": "AC Technician",
+        "addressId": "6932207c-0a80-4545-8d0b-e2db37899b9c",
+        "addressSummary": "123 Test Street, Suite 4, Bengaluru - 560001",
+        "title": "AC Deep Cleaning and Gas Refill",
+        "description": "Looking for a certified technician to clean and service two split AC units.",
+        "budget": 1500,
+        "scheduledAt": "2026-11-11T09:03:26",
+        "status": "OPEN",
+        "applicationCount": 0
+      },
+      {
+        "id": "e6b2589c-4fdf-4b3b-b28c-2e0c8542cd3a",
+        "providerProfileId": "15dc8155-a12f-45d5-9112-74cdfefec56f",
+        "providerName": "Bob Builder Provider",
+        "categoryId": "062da945-ec2c-4a06-adcd-3faf9c2859e9",
+        "categoryName": "AC Technician",
+        "addressId": "87299810-a532-446d-a23b-b4bd91d3e7de",
+        "addressSummary": "42 Tech Boulevard, Metropolis - 560001",
+        "title": "Urgent AC Servicing Required",
+        "description": "AC is leaking water and not cooling.",
+        "budget": 600,
+        "scheduledAt": "2026-10-23T15:33:32",
+        "status": "COMPLETED",
+        "applicationCount": 1
+      },
+      {
+        "id": "f221db0d-7b5d-4322-9396-dff743a259fb",
+        "providerProfileId": "82b543b9-89ff-4ccd-ab1a-17cc74fbba82",
+        "providerName": "Bob Builder Provider",
+        "categoryId": "062da945-ec2c-4a06-adcd-3faf9c2859e9",
+        "categoryName": "AC Technician",
+        "addressId": "87f37682-a468-45c8-aec8-44f781409d53",
+        "addressSummary": "42 Tech Boulevard, Metropolis - 560001",
+        "title": "Urgent AC Servicing Required",
+        "description": "AC is leaking water and not cooling.",
+        "budget": 600,
+        "scheduledAt": "2026-10-12T13:14:26",
+        "status": "COMPLETED",
+        "applicationCount": 1
+      }
+    ],
+    "timestamp": "2026-11-08T09:03:27.085821200Z"
+  }
+}

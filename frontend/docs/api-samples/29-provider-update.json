@@ -1,0 +1,21 @@
+{
+  "name": "29-provider-update",
+  "endpoint": "/providers/1e9ae65c-14a2-49f2-a121-1da7be2ecb3f",
+  "method": "PUT",
+  "status": 200,
+  "body": {
+    "success": true,
+    "message": "Provider profile updated",
+    "data": {
+      "id": "1e9ae65c-14a2-49f2-a121-1da7be2ecb3f",
+      "userId": "a72d9a3f-5a6c-44f7-ad4b-c2cb3980db3b",
+      "userName": "Probe Provider",
+      "userEmail": "probe.provider.1794128606435@gigmart.test",
+      "userPhone": "9828606435",
+      "providerType": "BUSINESS",
+      "businessName": "Apex Property Care",
+      "avgRating": 5
+    },
+    "timestamp": "2026-11-08T09:03:27.627930100Z"
+  }
+}

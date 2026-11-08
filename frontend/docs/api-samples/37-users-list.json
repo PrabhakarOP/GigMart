@@ -1,0 +1,193 @@
+{
+  "name": "37-users-list",
+  "endpoint": "/users",
+  "method": "GET",
+  "status": 200,
+  "body": {
+    "success": true,
+    "message": "Success",
+    "data": [
+      {
+        "id": "0b24ec9e-cfdf-4f4c-ab30-dea4a2b03021",
+        "fullName": "Bob Builder Provider",
+        "email": "bob1791877369141@market.com",
+        "phone": "+911177369141",
+        "role": "PROVIDER",
+        "createdAt": "2026-10-13T07:42:49Z",
+        "verified": false
+      },
+      {
+        "id": "106343db-9a46-497f-b005-f40ccd92b8ef",
+        "fullName": "Charlie Tech Worker",
+        "email": "charlie1791700663396@market.com",
+        "phone": "+9122663396",
+        "role": "WORKER",
+        "createdAt": "2026-10-11T06:37:43Z",
+        "verified": false
+      },
+      {
+        "id": "35e07fd7-5cca-48e9-85f5-44af5a45cb4f",
+        "fullName": "Platform Admin",
+        "email": "admin@gigmart.com",
+        "phone": "+10000000001",
+        "role": "ADMIN",
+        "createdAt": "2026-10-11T06:35:34Z",
+        "verified": false
+      },
+      {
+        "id": "3b5282fd-7cb2-44b6-969d-a7dc55057b71",
+        "fullName": "John Provider",
+        "email": "provider@gigmart.com",
+        "phone": "+10000000002",
+        "role": "PROVIDER",
+        "createdAt": "2026-10-11T06:35:34Z",
+        "verified": true
+      },
+      {
+        "id": "3f9198e8-3602-4eda-ae9f-6bc8d101af5f",
+        "fullName": "Alice Customer",
+        "email": "alice1791704666048@test.com",
+        "phone": "+911704666048",
+        "role": "PROVIDER",
+        "createdAt": "2026-10-11T07:44:26Z",
+        "verified": false
+      },
+      {
+        "id": "519393e7-bb68-4b7b-a5eb-9057e741414d",
+        "fullName": "Bob Builder Provider",
+        "email": "bob1791700663396@market.com",
+        "phone": "+9111663396",
+        "role": "PROVIDER",
+        "createdAt": "2026-10-11T06:37:43Z",
+        "verified": false
+      },
+      {
+        "id": "576d8034-0f83-4a3e-b628-79676ef5ff3b",
+        "fullName": "Charlie Tech Worker",
+        "email": "charlie1791704666335@market.com",
+        "phone": "+91224666335",
+        "role": "WORKER",
+        "createdAt": "2026-10-11T07:44:26Z",
+        "verified": false
+      },
+      {
+        "id": "6d97c99c-e92f-40c8-8df3-ecfb42da4b3e",
+        "fullName": "Charlie Tech Worker",
+        "email": "charlie1792663412829@market.com",
+        "phone": "+912263412829",
+        "role": "WORKER",
+        "createdAt": "2026-10-22T10:03:32Z",
+        "verified": false
+      },
+      {
+        "id": "6f07a8f8-cc5c-4967-8cd3-32375da3b95a",
+        "fullName": "Bob Builder Provider",
+        "email": "bob1791700830715@market.com",
+        "phone": "+9111830715",
+        "role": "PROVIDER",
+        "createdAt": "2026-10-11T06:40:30Z",
+        "verified": false
+      },
+      {
+        "id": "8216d0e4-337c-4189-823b-750ef45a4415",
+        "fullName": "Bob Builder Provider",
+        "email": "bob1792663412829@market.com",
+        "phone": "+911163412829",
+        "role": "PROVIDER",
+        "createdAt": "2026-10-22T10:03:32Z",
+        "verified": false
+      },
+      {
+        "id": "846a08b4-b4d9-4342-8b4d-12e5ab01ae1f",
+        "fullName": "Probe Worker",
+        "email": "probe.worker.1794128606435@gigmart.test",
+        "phone": "9928606435",
+        "role": "WORKER",
+        "createdAt": "2026-11-08T09:03:26Z",
+        "verified": false
+      },
+      {
+        "id": "96b4a190-691d-4ca5-9de1-f7384b4e3d14",
+        "fullName": "Alex Worker",
+        "email": "worker@gigmart.com",
+        "phone": "+10000000003",
+        "role": "WORKER",
+        "createdAt": "2026-10-11T06:35:34Z",
+        "verified": true
+      },
+      {
+        "id": "a0494758-a9c9-4ad6-9585-1a0b3aa3735e",
+        "fullName": "Alice Customer",
+        "email": "alice1791877368848@test.com",
+        "phone": "+911877368848",
+        "role": "PROVIDER",
+        "createdAt": "2026-10-13T07:42:48Z",
+        "verified": false
+      },
+      {
+        "id": "a72d9a3f-5a6c-44f7-ad4b-c2cb3980db3b",
+        "fullName": "Probe Provider",
+        "email": "probe.provider.1794128606435@gigmart.test",
+        "phone": "9828606435",
+        "role": "PROVIDER",
+        "createdAt": "2026-11-08T09:03:26Z",
+        "verified": false
+      },
+      {
+        "id": "ae2f343a-d2ce-41e0-90fe-8d97290a3ef2",
+        "fullName": "Alice Customer",
+        "email": "alice1791700663140@test.com",
+        "phone": "+911700663140",
+        "role": "PROVIDER",
+        "createdAt": "2026-10-11T06:37:43Z",
+        "verified": false
+      },
+      {
+        "id": "b5ee2fdd-a401-487d-807e-e802911315c4",
+        "fullName": "Charlie Tech Worker",
+        "email": "charlie1791700830715@market.com",
+        "phone": "+9122830715",
+        "role": "WORKER",
+        "createdAt": "2026-10-11T06:40:30Z",
+        "verified": false
+      },
+      {
+        "id": "b60c6b10-aa04-4f43-8cb4-7a3a1552dd4b",
+        "fullName": "Alice Customer",
+        "email": "alice1792663412555@test.com",
+        "phone": "+912663412555",
+        "role": "PROVIDER",
+        "createdAt": "2026-10-22T10:03:32Z",
+        "verified": false
+      },
+      {
+        "id": "bd8c742e-89e4-4551-96ec-0a7b250d6dc2",
+        "fullName": "Bob Builder Provider",
+        "email": "bob1791704666335@market.com",
+        "phone": "+91114666335",
+        "role": "PROVIDER",
+        "createdAt": "2026-10-11T07:44:26Z",
+        "verified": false
+      },
+      {
+        "id": "c7b72aa6-b821-4473-a4be-7f74f4b54b62",
+        "fullName": "Charlie Tech Worker",
+        "email": "charlie1791877369141@market.com",
+        "phone": "+912277369141",
+        "role": "WORKER",
+        "createdAt": "2026-10-13T07:42:49Z",
+        "verified": false
+      },
+      {
+        "id": "dd65d456-5179-4ee6-a130-801ad136f54b",
+        "fullName": "Alice Customer",
+        "email": "alice1791700830380@test.com",
+        "phone": "+911700830380",
+        "role": "PROVIDER",
+        "createdAt": "2026-10-11T06:40:30Z",
+        "verified": false
+      }
+    ],
+    "timestamp": "2026-11-08T09:03:27.821275400Z"
+  }
+}

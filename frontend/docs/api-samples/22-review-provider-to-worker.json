@@ -1,0 +1,22 @@
+{
+  "name": "22-review-provider-to-worker",
+  "endpoint": "/reviews",
+  "method": "POST",
+  "status": 201,
+  "body": {
+    "success": true,
+    "message": "Review submitted successfully",
+    "data": {
+      "id": "5e4b5f5a-d46c-4b87-982c-f4350ff66070",
+      "bookingId": "95491d5c-3879-456b-8192-1309a862a7aa",
+      "reviewerId": "a72d9a3f-5a6c-44f7-ad4b-c2cb3980db3b",
+      "reviewerName": "Probe Provider",
+      "revieweeId": "846a08b4-b4d9-4342-8b4d-12e5ab01ae1f",
+      "revieweeName": "Probe Worker",
+      "rating": 5,
+      "comment": "Punctual and very thorough service!",
+      "createdAt": "2026-11-08T14:33:27"
+    },
+    "timestamp": "2026-11-08T09:03:27.402639200Z"
+  }
+}
