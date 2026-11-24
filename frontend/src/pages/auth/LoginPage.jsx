@@ -124,7 +124,7 @@ export default function LoginPage() {
           <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 text-center mb-3">
             One-Click Demo Accounts
           </p>
-          <div className="grid grid-cols-3 gap-2">
+          <div className="grid grid-cols-2 gap-2">
             <button
               type="button"
               id="demo-login-provider"
@@ -144,16 +144,6 @@ export default function LoginPage() {
             >
               <HardHat className="w-3.5 h-3.5 mb-1 text-neutral-700" />
               <span className="text-[11px] font-semibold">Worker</span>
-            </button>
-            <button
-              type="button"
-              id="demo-login-admin"
-              onClick={() => handleDemoLogin('admin@gigmart.com', 'admin123')}
-              disabled={loading}
-              className="btn btn-secondary btn-sm flex flex-col items-center py-2 px-1 text-center h-auto hover:border-neutral-900"
-            >
-              <ShieldCheck className="w-3.5 h-3.5 mb-1 text-neutral-700" />
-              <span className="text-[11px] font-semibold">Admin</span>
             </button>
           </div>
         </div>
