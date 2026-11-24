@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { useToast } from '../../context/ToastContext';
 import {
@@ -59,9 +59,12 @@ export default function ProfilePage() {
 
   // Address add / delete modal state
   const [addressModalOpen, setAddressModalOpen] = useState(false);
-  const [addrLine1, setAddrLine1] = useState('');
-  const [addrCity, setAddrCity] = useState('');
-  const [addrPincode, setAddrPincode] = useState('');
+  // const [addrLine1, setAddrLine1] = useState('');
+  // const [addrCity, setAddrCity] = useState('');
+  // const [addrPincode, setAddrPincode] = useState('');
+  const addrLine1ref = useRef(null);
+  const addrCityref = useRef(null);
+  const addrPincoderef = useRef(null);
   const [savingAddress, setSavingAddress] = useState(false);
   const [deletingAddressId, setDeletingAddressId] = useState(null);
 
@@ -180,19 +183,22 @@ export default function ProfilePage() {
   const handleSaveAddress = async (e) => {
     e.preventDefault();
     setSavingAddress(true);
+    const addressLine1 = addrLine1ref.current.value;
+    const addressCity = addrCityref.current.value;
+    const addrPincode = addrPincoderef.current.value;
     try {
       const newAddr = await addressApi.create({
         userId: user.id,
-        line1: addrLine1.trim(),
-        city: addrCity.trim(),
+        line1: addressLine1.trim(),
+        city: addressCity.trim(),
         pincode: addrPincode.trim(),
       });
       success('Address added');
       setAddresses((prev) => [...prev, newAddr]);
       setAddressModalOpen(false);
-      setAddrLine1('');
-      setAddrCity('');
-      setAddrPincode('');
+      // setAddrLine1('');
+      // setAddrCity('');
+      // setAddrPincode('');
     } catch (err) {
       toastError(err.message || 'Failed to save address');
     } finally {
@@ -750,8 +756,7 @@ export default function ProfilePage() {
               id="prof-addr-line1"
               type="text"
               required
-              value={addrLine1}
-              onChange={(e) => setAddrLine1(e.target.value)}
+              ref={addrLine1ref}
               placeholder="e.g. Flat 102, Sunrise Towers"
               className="input"
             />
@@ -766,8 +771,7 @@ export default function ProfilePage() {
                 id="prof-addr-city"
                 type="text"
                 required
-                value={addrCity}
-                onChange={(e) => setAddrCity(e.target.value)}
+                ref={addrCityref}
                 placeholder="Bengaluru"
                 className="input"
               />
@@ -780,8 +784,7 @@ export default function ProfilePage() {
                 id="prof-addr-pincode"
                 type="text"
                 required
-                value={addrPincode}
-                onChange={(e) => setAddrPincode(e.target.value)}
+                ref={addrPincoderef}
                 placeholder="560001"
                 className="input"
               />
