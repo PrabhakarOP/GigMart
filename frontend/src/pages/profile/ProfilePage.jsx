@@ -70,22 +70,30 @@ export default function ProfilePage() {
 
   // Worker Service add modal state
   const [serviceModalOpen, setServiceModalOpen] = useState(false);
-  const [serviceCategoryId, setServiceCategoryId] = useState('');
-  const [serviceBaseRate, setServiceBaseRate] = useState('');
-  const [serviceRateType, setServiceRateType] = useState('HOURLY');
+  // const [serviceCategoryId, setServiceCategoryId] = useState('');
+  // const [serviceBaseRate, setServiceBaseRate] = useState('');
+  // const [serviceRateType, setServiceRateType] = useState('HOURLY');
+  const serviceCategoryIdref = useRef(null);
+  const serviceBaseRateref = useRef(null);
+  const serviceRateTyperef = useRef(null);
   const [savingService, setSavingService] = useState(false);
 
   // Worker Slot add modal state
   const [slotModalOpen, setSlotModalOpen] = useState(false);
-  const [slotDay, setSlotDay] = useState(1);
-  const [slotStart, setSlotStart] = useState('09:00');
-  const [slotEnd, setSlotEnd] = useState('17:00');
+  // const [slotDay, setSlotDay] = useState(1);
+  // const [slotStart, setSlotStart] = useState('09:00');
+  // const [slotEnd, setSlotEnd] = useState('17:00');
+  const slotDayref = useRef(null);
+  const slotStartref = useRef(null);
+  const slotEndref = useRef(null);
   const [savingSlot, setSavingSlot] = useState(false);
 
   // Worker Document add modal state
   const [docModalOpen, setDocModalOpen] = useState(false);
-  const [docType, setDocType] = useState('ID');
-  const [docFileUrl, setDocFileUrl] = useState('');
+  // const [docType, setDocType] = useState('ID');
+  // const [docFileUrl, setDocFileUrl] = useState('');
+  const docTyperef = useRef(null);
+  const docFileUrlref = useRef(null);
   const [savingDoc, setSavingDoc] = useState(false);
 
   // Load addresses, reviews, and worker sub-resources
@@ -223,6 +231,9 @@ export default function ProfilePage() {
   const handleAddWorkerService = async (e) => {
     e.preventDefault();
     setSavingService(true);
+    const serviceCategoryId = serviceCategoryIdref.current.value;
+    const serviceBaseRate = serviceBaseRateref.current.value;
+    const serviceRateType = serviceRateTyperef.current.value;
     try {
       const res = await workerApi.addService({
         workerProfileId: profile.id,
@@ -233,7 +244,6 @@ export default function ProfilePage() {
       success('Service added');
       setWorkerServices((prev) => [...prev, res]);
       setServiceModalOpen(false);
-      setServiceBaseRate('');
     } catch (err) {
       toastError(err.message || 'Failed to add service');
     } finally {
@@ -255,10 +265,13 @@ export default function ProfilePage() {
   const handleAddSlot = async (e) => {
     e.preventDefault();
     setSavingSlot(true);
+    const slotDay = Number(slotDayref.current.value);
+    const slotStart = slotStartref.current.value;
+    const slotEnd = slotEndref.current.value;
     try {
       const res = await workerApi.addSlot({
         workerProfileId: profile.id,
-        dayOfWeek: Number(slotDay),
+        dayOfWeek: slotDay,
         startTime: slotStart,
         endTime: slotEnd,
       });
@@ -286,6 +299,8 @@ export default function ProfilePage() {
   const handleAddDocument = async (e) => {
     e.preventDefault();
     setSavingDoc(true);
+    const docType = docTyperef.current.value;
+    const docFileUrl = docFileUrlref.current.value;
     try {
       const res = await workerApi.addDocument({
         workerProfileId: profile.id,
@@ -295,7 +310,6 @@ export default function ProfilePage() {
       success('Document added');
       setWorkerDocs((prev) => [...prev, res]);
       setDocModalOpen(false);
-      setDocFileUrl('');
     } catch (err) {
       toastError(err.message || 'Failed to add document');
     } finally {
@@ -839,8 +853,7 @@ export default function ProfilePage() {
             </label>
             <select
               id="prof-service-cat"
-              value={serviceCategoryId}
-              onChange={(e) => setServiceCategoryId(e.target.value)}
+              ref={serviceCategoryIdref}
               className="select"
             >
               {categories.map((c) => (
@@ -861,8 +874,7 @@ export default function ProfilePage() {
                 type="number"
                 min="1"
                 required
-                value={serviceBaseRate}
-                onChange={(e) => setServiceBaseRate(e.target.value)}
+                ref={serviceBaseRateref}
                 placeholder="500"
                 className="input"
               />
@@ -873,8 +885,7 @@ export default function ProfilePage() {
               </label>
               <select
                 id="prof-service-type"
-                value={serviceRateType}
-                onChange={(e) => setServiceRateType(e.target.value)}
+                ref={serviceRateTyperef}
                 className="select"
               >
                 <option value="HOURLY">HOURLY</option>
@@ -919,8 +930,7 @@ export default function ProfilePage() {
             </label>
             <select
               id="prof-slot-day"
-              value={slotDay}
-              onChange={(e) => setSlotDay(Number(e.target.value))}
+              ref={slotDayref}
               className="select"
             >
               <option value={1}>Monday</option>
@@ -942,8 +952,7 @@ export default function ProfilePage() {
                 id="prof-slot-start"
                 type="time"
                 required
-                value={slotStart}
-                onChange={(e) => setSlotStart(e.target.value)}
+                ref={slotStartref}
                 className="input"
               />
             </div>
@@ -955,8 +964,7 @@ export default function ProfilePage() {
                 id="prof-slot-end"
                 type="time"
                 required
-                value={slotEnd}
-                onChange={(e) => setSlotEnd(e.target.value)}
+                ref={slotEndref}
                 className="input"
               />
             </div>
@@ -1000,8 +1008,7 @@ export default function ProfilePage() {
               id="prof-doc-type"
               type="text"
               required
-              value={docType}
-              onChange={(e) => setDocType(e.target.value)}
+              ref={docTyperef}
               placeholder="e.g. ID, GOVT_LICENSE, CERTIFICATE"
               className="input"
             />
@@ -1015,8 +1022,7 @@ export default function ProfilePage() {
               id="prof-doc-url"
               type="url"
               required
-              value={docFileUrl}
-              onChange={(e) => setDocFileUrl(e.target.value)}
+              ref={docFileUrlref}
               placeholder="https://example.com/my-license.pdf"
               className="input"
             />
