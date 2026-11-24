@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { useToast } from '../../context/ToastContext';
@@ -32,9 +32,12 @@ export default function CreateGigPage() {
 
   // Quick-add address modal state
   const [addressModalOpen, setAddressModalOpen] = useState(false);
-  const [newAddressLine1, setNewAddressLine1] = useState('');
-  const [newAddressCity, setNewAddressCity] = useState('');
-  const [newAddressPincode, setNewAddressPincode] = useState('');
+  // const [newAddressLine1, setNewAddressLine1] = useState('');
+  // const [newAddressCity, setNewAddressCity] = useState('');
+  // const [newAddressPincode, setNewAddressPincode] = useState('');
+  const newAddressLine1ref = useRef(null);
+  const newAddressCityref = useRef(null);
+  const newAddressPincoderef = useRef(null);
   const [addingAddress, setAddingAddress] = useState(false);
 
   // Load categories and provider's addresses
@@ -76,6 +79,9 @@ export default function CreateGigPage() {
   // Handle Quick Add Address
   const handleQuickAddAddress = async (e) => {
     e.preventDefault();
+    const newAddressLine1 = newAddressLine1ref.current.value;
+    const newAddressCity = newAddressCityref.current.value;
+    const newAddressPincode = newAddressPincoderef.current.value;
     if (!newAddressLine1.trim() || !newAddressCity.trim() || !newAddressPincode.trim()) {
       toastError('Please fill in line 1, city, and pincode');
       return;
@@ -384,8 +390,7 @@ export default function CreateGigPage() {
               id="quick-addr-line1"
               type="text"
               required
-              value={newAddressLine1}
-              onChange={(e) => setNewAddressLine1(e.target.value)}
+              ref={newAddressLine1ref}
               placeholder="Apartment 4B, Green Acres, 14th Main"
               className="input"
             />
@@ -400,8 +405,7 @@ export default function CreateGigPage() {
                 id="quick-addr-city"
                 type="text"
                 required
-                value={newAddressCity}
-                onChange={(e) => setNewAddressCity(e.target.value)}
+                ref={newAddressCityref}
                 placeholder="Bengaluru"
                 className="input"
               />
@@ -414,8 +418,7 @@ export default function CreateGigPage() {
                 id="quick-addr-pincode"
                 type="text"
                 required
-                value={newAddressPincode}
-                onChange={(e) => setNewAddressPincode(e.target.value)}
+                ref={newAddressPincoderef}
                 placeholder="560001"
                 className="input"
               />
